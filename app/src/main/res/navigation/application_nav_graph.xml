@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/application_nav_graph"
+    app:startDestination="@id/startViewBindingFragment">
+
+    <fragment
+        android:id="@+id/familyCodeViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907latihan3.layout.FamilyCodeViewBindingFragment"
+        android:label="fragment_family_code"
+        tools:layout="@layout/fragment_family_code" >
+        <action
+            android:id="@+id/action_familyCodeViewBindingFragment_to_registerViewBindingFragment"
+            app:destination="@id/registerViewBindingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907latihan3.layout.HomeViewBindingFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907latihan3.layout.RegisterViewBindingFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerViewBindingFragment_to_homeViewBindingFragment"
+            app:destination="@id/homeViewBindingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startViewBindingFragment"
+        android:name="com.tdoni_10119907.a10119907latihan3.layout.StartViewBindingFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startViewBindingFragment_to_familyCodeViewBindingFragment"
+            app:destination="@id/familyCodeViewBindingFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ 5/7/2022
+ 10119907
+ T DONI INDRAPRASTA PRADANA
+ IF10K
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_three"
+    tools:context=".layout.StartViewBindingFragment">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_get_start_timitory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/monitory_membantu_anda_mengontrol_hp_anak"
+        android:textAlignment="center"
+        android:textColor="@color/black_20"
+        android:textSize="@dimen/txt_normal_125"
+        app:layout_constraintBottom_toBottomOf="@id/img_logo"
+        app:layout_constraintEnd_toEndOf="@id/img_logo"
+        app:layout_constraintStart_toStartOf="@id/img_logo"
+        app:layout_constraintTop_toTopOf="@id/img_logo" />
+
+    <RelativeLayout
+        android:id="@+id/card_bg_bottom"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:background="@drawable/bg_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_normal_150"
+        android:layout_marginEnd="@dimen/space_normal_150"
+        android:background="@drawable/shape_regular_button"
+        android:fontFamily="@font/rubik_medium"
+        android:minHeight="0dp"
+        android:text="@string/mulai"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_mini_140"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@id/card_bg_bottom"
+        app:layout_constraintEnd_toEndOf="@id/card_bg_bottom"
+        app:layout_constraintStart_toStartOf="@id/card_bg_bottom"
+        app:layout_constraintTop_toTopOf="@id/card_bg_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

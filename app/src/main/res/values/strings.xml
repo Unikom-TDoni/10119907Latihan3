@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">10119907Latihan3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="monitory_membantu_anda_mengontrol_hp_anak">Monitory Membantu Anda \n Mengontrol HP Anak</string>
+    <string name="mulai">Mulai</string>
+    <string name="kode_keluarga">Kode Keluarga</string>
+    <string name="ketikan_kode_keluarga_yang_ayah_bunda_miliki_disini">Ketikan kode keluarga yang Ayah Bunda miliki disini</string>
+    <string name="dengan_menekan_tombol_masuk_anda_menyetujui_n_ketentuan_pengguna_dan_kebijakan_data_kami">Dengan menekan tombol masuk Anda menyetujui \n <b>Ketentuan Pengguna</b> dan <b>Kebijakan Data</b> kami</string>
+    <string name="masuk">Masuk</string>
+    <string name="a1b2c3">A1B2C3</string>
+    <string name="belum_punya_kartu_keluarga">Belum punya kartu keluarga?</string>
+    <string name="beli_kode_keluarga_disini">Beli Kode Keluarga Disini</string>
+    <string name="nama_panggilan_kamu">Nama Panggilan Kamu</string>
+    <string name="umur_kamu">Umur Kamu</string>
+    <string name="contoh_budi">Contoh : Budi</string>
+    <string name="contoh_12">Contoh : 12</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="oke">Oke</string>
+</resources>

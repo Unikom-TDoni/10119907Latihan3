@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ 5/7/2022
+ 10119907
+ T DONI INDRAPRASTA PRADANA
+ IF10K
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.HomeViewBindingFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/normal_guideline_start_point" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/normal_guideline_end_point" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_greeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_large_187.5"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black_20"
+        android:textSize="@dimen/txt_normal_175"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ok"
+        android:layout_width="0dp"
+        android:minHeight="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_large_200"
+        android:layout_marginEnd="@dimen/space_large_200"
+        android:layout_marginBottom="@dimen/space_large_100"
+        android:background="@drawable/shape_regular_button"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/oke"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_mini_140"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

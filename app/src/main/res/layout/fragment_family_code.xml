@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ 5/7/2022
+ 10119907
+ T DONI INDRAPRASTA PRADANA
+ IF10K
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_three"
+    tools:context=".layout.FamilyCodeViewBindingFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/normal_guideline_start_point" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@fraction/normal_guideline_end_point" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_large_187.5"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/kode_keluarga"
+        android:textColor="@color/black_20"
+        android:textSize="@dimen/txt_normal_175"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_mini_100"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/ketikan_kode_keluarga_yang_ayah_bunda_miliki_disini"
+        android:textColor="@color/black_20"
+        android:textSize="@dimen/txt_normal_112.5"
+        app:fontFamily="@font/rubik_regular"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/txt_tittle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_layout_family_code"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_normal_150"
+        app:boxCornerRadiusBottomEnd="@dimen/space_normal_150"
+        app:boxCornerRadiusBottomStart="@dimen/space_normal_150"
+        app:boxCornerRadiusTopEnd="@dimen/space_normal_150"
+        app:boxCornerRadiusTopStart="@dimen/space_normal_150"
+        app:boxStrokeColor="@color/brown_grey"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_family_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/a1b2c3"
+            android:inputType="textCapCharacters"
+            android:maxLength="6" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_desc_privacy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_normal_150"
+        android:text="@string/dengan_menekan_tombol_masuk_anda_menyetujui_n_ketentuan_pengguna_dan_kebijakan_data_kami"
+        android:textAlignment="center"
+        android:textColor="@color/black_20"
+        android:textSize="@dimen/txt_mini_120"
+        app:fontFamily="@font/rubik_regular"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/txt_layout_family_code" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_mini_140"
+        android:background="@drawable/shape_regular_button"
+        android:fontFamily="@font/rubik_medium"
+        android:minHeight="0dp"
+        android:text="@string/masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_mini_140"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc_privacy" />
+
+    <RelativeLayout
+        android:id="@+id/card_bg_bottom"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_desc_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_normal_100"
+        android:elevation="2dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/belum_punya_kartu_keluarga"
+        android:textColor="@color/black_87"
+        app:layout_constraintBottom_toTopOf="@id/btn_buy"
+        app:layout_constraintEnd_toEndOf="@id/card_bg_bottom"
+        app:layout_constraintStart_toStartOf="@id/card_bg_bottom"
+        app:layout_constraintTop_toTopOf="@id/card_bg_bottom"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_buy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/beli_kode_keluarga_disini"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/warm_blue"
+        app:cornerRadius="@dimen/space_normal_150"
+        app:layout_constraintBottom_toBottomOf="@id/card_bg_bottom"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/txt_desc_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
